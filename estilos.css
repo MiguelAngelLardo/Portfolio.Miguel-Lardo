@@ -3,7 +3,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 header{
-    height: 65px;
+    height: 5vh;
     background-color: #7b1fa2;
     color: white;
     display: flex;
@@ -12,17 +12,17 @@ header{
 }
 .cara{
     border-radius: 500px;
-    height: 200px;
+    height: 300px;
 }
 .uno{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: calc(100vh - 65px);
+    height: calc(60vh - 65px);
     background-color: #303030;
     color: white;
-    /* padding-top: 10%; */
+    /* padding-top: 10%;*/
 }
 .caja-central{
     margin-top: 10%;
@@ -52,7 +52,7 @@ header{
 
 .dos{
     background-color: #F2F2F2;
-    height: 700px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,6 +61,43 @@ header{
     padding-left: 20%;
     padding-right: 20%;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;/*me da margen entre elemento*/
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  span {
+    color: red;
+    margin-left: 5px;
+  }
+  
+  a.show-credential {
+    color: blue;
+    margin-left: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
 .aptitudes{
     width: 50%;
 }
@@ -163,4 +200,5 @@ footer{
     .red-social{
         margin: 0 10px 0 10px;
     }
+
 }
