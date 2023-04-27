@@ -10,106 +10,119 @@ header{
     align-items: center;
     padding-left: 25px;
 }
-.cara{
-    border-radius: 500px;
-    height: 300px;
+h2{/*font-size: 4rem;/*1.5em x 16px del padre => 24 px y 1.5rem x16px del html da 24 px, REM es mas responsivo*/
+    text-align: center; 
+    font-size: calc(3em + 0.8vw);
+    color: rgb(29, 23, 23);  text-shadow: 0px 0px 10px white, 0px 0px 15px white,0px 0px 20px white;        
 }
-.uno{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: calc(60vh - 65px);
-    background-color: #303030;
-    color: white;
-    /* padding-top: 10%;*/
+
+/*-----------------------------------------------Banner---------------------------------------------------*/
+.uno{/*height: calc(60vh - 65px); background-color: #303030; padding-top: 10%; color: white;*/
+    display: flex; flex-direction: row; justify-content: center; align-items: center;/*justify/horizontal - align/center*/
+    height: 40vh;
+    background-image: url('foto1.png');       
 }
-.caja-central{
-    margin-top: 10%;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
+
+.caja-central{ /*width: 60%; height: 50%; margin-top: 5%;*/
+    display: flex;flex-direction: row;       
+    width: 50%; height: 30vh;
+    margin-top: 0vh;    
     border-radius: 20px;
-    overflow: hidden;
-    height: 50%;
+    overflow: hidden;/*si el contenido se desborda no se ve*/
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff,0 0 40px #ffffff,0 0 50px #ffffff;    
 }
+
 .caja-cara{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; justify-content: center; align-items: center;
     width: 40%;
     background-color: #424242;
 }
-.caja-presentacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    background-color: #F2F2F2;
-    color: #303030;
-    padding: 10px;
-}
 
-.dos{
-    background-color: #F2F2F2;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #303030;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    margin: 10px 0;/*me da margen entre elemento*/
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  span {
-    color: red;
-    margin-left: 5px;
-  }
-  
-  a.show-credential {
-    color: blue;
-    margin-left: 5px;
-  }
-
-
-
-
-
-
-
-
-
-
-.aptitudes{
+.cara{
     width: 50%;
-}
-.tech-list{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
+    height: auto; /* si achico la pantalla la imagen se achica automaticamente*/
+    border-radius: 500px
 }
 
-.tech{
-    height: 90px;
+.caja-presentacion{ /*background-color: #F2F2F6;*/
+    display: flex; justify-content: center;
+    /*align-items: center;*/
+    width: 60%;   
+    background-color: #222;
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px white, 0px 0px 15px white,0px 0px 20px white;
+    padding: 1%;
 }
+
+.texto{
+    width: 90%;
+    line-height: calc(100% / 0.8); /* altura del interlineadp es igual a 0.8 veces el alto de la caja - * 1.2 esparael interlineado*/
+    font-size: calc(0.6em + 0.4vw); /*tamaño letra: 0.7em cuando sea 1000px y aumenta 0.4em por cada 1000px adicional */   
+}
+
+/*-----------------------------------------------------cursos--------------------------------------------------------*/
+.dos{ 
+    display: flex; flex-direction: column; justify-content: center; align-items: center;    
+    font-family: 'Carrois Gothic SC',sans-serif; /*Sawarabi Gothic,Blackletter, Cloister Black, Old English Text,,Carrois Gothic SC,othic Ultra OT,Didact Gothic,fantasy*/ 
+    background-image: linear-gradient(to bottom, #000000, #2e3031);
+    padding: 0 0 5% 0;
+} 
+
+ul{
+    display: flex;flex-direction: column; justify-content: center; align-items: left;
+    list-style-type: none; /* Quita el punto de la viñeta */
+    line-height: calc(100% / 0.7); 
+    font-size: calc(1.5em + 0.5vw); /* em es el tamaño base, vw agrega tamaño adicional q depende del ancho de la pantalla */ 
+    margin-bottom: 2%;
+}
+
+li {margin: 5px 0;/*me da margen entre elemento*/}
+
+li::before { /*:: es pseudoelemento para agregar algo antes del texto*/
+    content: "\2192"; /* agrega flecha*/ color: white; text-shadow: 0px 0px 10px white, 0px 0px 15px white, 0px 0px 20px white; margin-right: 5px;
+}
+
+a:first-of-type { /*pseudo clase para el primer <a>*/
+    color: white; text-shadow: 0px 0px 10px white, 0px 0px 15px white, 0px 0px 20px white;    text-decoration: none;
+}
+
+span{/* rojo rubí  */ 
+   font-size: 110%; margin-left: 5px; color: #e91e63; text-shadow: 0px 0px 10px #e91e63, 0px 0px 15px rgba(255, 87, 34, 0.5), 0px 0px 20px rgba(255, 87, 34, 0.3);
+}  
+
+ a.show-credential {
+    margin-left: 5px; text-decoration: none; color: #ff69b4; text-shadow: 0px 0px 10px #ff69b4, 0px 0px 15px rgba(255, 105, 180, 0.5), 0px 0px 20px rgba(255, 105, 180, 0.3);    
+}
+
+a:hover { /*pseudoclase para cuando paso el mouse*/
+    text-decoration: underline;
+}
+
+/*-------------------------------ICONOS-----------------------------------------------------------------*/
+
+.aptitudes p{    
+  display: flex; justify-content: center;
+  font-size: calc(2.2em + 0.5vw); text-shadow: 0px 0px 10px white, 0px 0px 15px white,0px 0px 20px white; 
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.aptitudes h2{
+    font-family: 'DotGothic16', sans-serif;
+
+}
+
+.tech-list{
+    display: flex; justify-content: center; gap: 5rem; /* Establece la separación entre los elementos */
+    padding-top: 1rem;
+    margin-bottom: 3rem
+} 
+
+.tech{/*tamañp icono*/
+    height: 10rem;
+} 
+
+
+/*PROYECTO*/
 
 .tres{
     background-color: #303030;
@@ -145,19 +158,19 @@ ul {
     border-radius: 10px;
 }
 
+/*----------------------------------------------CONTACTO----------------------------------------*/
+
 footer{
-    background-color: #424242;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    color: #F2F2F2;
-    height: 250px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    font-family: 'Didact Gothic', sans-serif;  
+    background-color: #424242;         
+    padding-bottom: 2%;
 }
+
 .contacto{
-    width: 30%;
-    display: flex;
-    justify-content: center;
+    display: flex;  
+    width: 10%;
+    
 }
 
 @media (max-width: 1000px) {
