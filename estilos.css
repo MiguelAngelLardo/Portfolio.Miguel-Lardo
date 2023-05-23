@@ -16,6 +16,13 @@ h2{/*font-size: 4rem;/*1.5em x 16px del padre => 24 px y 1.5rem x16px del html d
     color: rgb(29, 23, 23);  text-shadow: 0px 0px 10px white, 0px 0px 15px white,0px 0px 20px white;        
 }
 
+h3{
+  text-align: center; 
+  font-size: calc(1.2em + 0.8vw);
+  color: rgb(29, 23, 23);  text-shadow: 0px 0px 10px white, 0px 0px 15px white,0px 0px 20px white; 
+}
+
+
 /*-----------------------------------------------Banner---------------------------------------------------*/
 .uno{/*height: calc(60vh - 65px); background-color: #303030; padding-top: 10%; color: white;*/
     display: flex; flex-direction: row; justify-content: center; align-items: center;/*justify/horizontal - align/center*/
@@ -43,6 +50,9 @@ h2{/*font-size: 4rem;/*1.5em x 16px del padre => 24 px y 1.5rem x16px del html d
     height: auto; /* si achico la pantalla la imagen se achica automaticamente*/
     border-radius: 500px
 }
+.cara:hover{
+  transform: scale(1.1);
+}
 
 .caja-presentacion{ /*background-color: #F2F2F6;*/
     display: flex; justify-content: center;
@@ -56,8 +66,8 @@ h2{/*font-size: 4rem;/*1.5em x 16px del padre => 24 px y 1.5rem x16px del html d
 
 .texto{
     width: 90%;
-    line-height: calc(100% / 0.8); /* altura del interlineadp es igual a 0.8 veces el alto de la caja - * 1.2 esparael interlineado*/
-    font-size: calc(0.5em + 0.4vw); /*tamaño letra: 0.7em cuando sea 1000px y aumenta 0.4em por cada 1000px adicional */   
+    line-height: calc(80% / 0.8); /* altura del interlineadp es igual a 0.8 veces el alto de la caja - * 1.2 esparael interlineado*/
+    font-size: calc(0.8rem + 0.4vw); /*tamaño letra: 0.7em cuando sea 1000px y aumenta 0.4em por cada 1000px adicional */   
 }
 
 .mostrar {
@@ -116,51 +126,70 @@ a:hover { /*pseudoclase para cuando paso el mouse*/
 }
 
 .tech-list{
-    display: flex; justify-content: center; gap: 5rem; /* Establece la separación entre los elementos */
+    display: flex;     
+    justify-content: center;
+    gap: 5rem;  /*Establece la separación entre los elementos */
     padding-top: 1rem;
-    margin-bottom: 3rem
+    margin-bottom: 3rem;
 } 
 
 .tech{/*tamañp icono*/
-    height: 10rem;
+    height: 9.4rem;     
+    object-fit: cover;
+    opacity: .7;
 } 
+
+.tech:hover{
+  cursor: pointer;  
+  opacity: 1;
+  filter: contrast(120%);
+  transform: scale(1.1);
+}
 
 
 /*----------------------PROYECTO-----------------------------------------------------*/
 
 .tres{
     background-color: #303030;
-    height: 600px;
+    height: 70vh;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     color: #F2F2F2;
 }
-.proyectos{
+.proyectos{    
     width: 60%;
+    height: 65%;
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 .card{
     text-align: center;
-    width: 30%;
+    width: 35%;
+    height: 80%;
     border: solid #F2F2F2 1px;
     border-radius: 10px;
     padding: 10px;
 }
 .card img{
-    width: 100%;
-}
-.card a, footer a {
-    color: white;
-}
-
-.red-social{
-    height: 60px;
-    background-color: #F2F2F2;
+    width: 80%;
     border-radius: 10px;
 }
+
+.card img:hover{
+  transform: scale(1.1);
+}
+
+.tres p{ 
+  font-size: calc(0.7rem + 0.6vw); 
+  color: #c4c1cc;  
+  text-shadow: 0px 0px 15px #E0E0E0;
+}  
+
+
+
 
 /*----------------------------------------------CONTACTO----------------------------------------*/
 
@@ -174,7 +203,23 @@ footer{
 .contacto{
     display: flex;  
     width: 10%;
+    object-fit: cover;
+    opacity: .9;
 }
+.red-social{
+  height: 60px;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+}
+
+.contacto img:hover{
+  cursor: pointer;  
+  opacity: 1;
+  filter: contrast(120%);
+  transform: scale(1.1);
+}
+
+
 
 /****************************1231px************************************************/
 @media screen and (max-width: 1231px) {
