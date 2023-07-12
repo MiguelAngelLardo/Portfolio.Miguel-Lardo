@@ -326,39 +326,60 @@ footer{
 
 /****************************767px************************************************/
 @media screen and (max-width: 767px) {
-    h2{/*font-size: 4rem;/*1.5em x 16px del padre => 24 px y 1.5rem x16px del html da 24 px, REM es mas responsivo*/
-        font-size: calc(1em + 0.7vw);
-        color: rgb(29, 23, 23);  text-shadow: 0px 0px 10px white, 0px 0px 15px white,0px 0px 20px white;        
-    }
+  h2{/*font-size: 4rem;/*1.5em x 16px del padre => 24 px y 1.5rem x16px del html da 24 px, REM es mas responsivo*/
+    font-size: calc(1em + 0.7vw);
+    color: rgb(29, 23, 23);  text-shadow: 0px 0px 10px white, 0px 0px 15px white,0px 0px 20px white;        
+  }
 
 /*-------------------------CURSOS-----------------------------------*/
  
-    ul {
-        font-size: calc(0.4em + 0.2vw); /* Cambia el tamaño de fuente */
-        margin-bottom: 1%; /* Cambia el espaciado */
-    }
+  ul {
+    font-size: calc(0.4em + 0.2vw); /* Cambia el tamaño de fuente */
+    margin-bottom: 1%; /* Cambia el espaciado */
+  }
 
-    .utn {   
-      width: 73%; /* Adjust the width */
-      font-size: 0.64em;
-      margin-left: 5%;
-    }
+  .utn {   
+    width: 73%; /* Adjust the width */
+    font-size: 0.64em;
+    margin-left: 5%;
+  }
     
 
 /*-------------------ICONOS--------------------------------*/
     .aptitudes p{
-        font-size: calc(0.6em + 0.3vw);       
+      font-size: calc(0.6em + 0.3vw);       
     }
 
     .tech-list{
-        display: flex;
-        flex-direction:column;  
-        align-items: center;   
-        justify-content: space-between; /*separacion vertical de iconos*/
-        gap: 5%;         /*Edito el espacio entre iconos*/
-        margin-bottom: 3%;      
+      display: flex;
+      flex-direction:column;  
+      align-items: center;   
+      justify-content: space-between; /*separacion vertical de iconos*/
+      gap: 5%;         /*Edito el espacio entre iconos*/
+      margin-bottom: 3%;      
     } 
-   
+    
+
+/*----------------------------------PROYECTOS----------------------------------------------*/
+  .tres{
+    height: auto;
+  }
+  .proyectos{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  .card{
+    width: 85%;
+    margin-top: 15px;
+  }
+  .red-social{
+    margin: 0 10px 0 10px;
+  } 
+
+
 /*----------------------------------------------CONTACTO----------------------------------------*/
     .contacto{
         display: flex;  
@@ -374,21 +395,5 @@ footer{
 
 
     
-    .tres{
-        height: auto;
-    }
-    .proyectos{
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 20px;
-    }
-    .card{
-        width: 80%;
-        margin-top: 20px;
-    }
-    .red-social{
-        margin: 0 10px 0 10px;
-    } 
+   
 
