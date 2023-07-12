@@ -112,6 +112,27 @@ a:hover { /*pseudoclase para cuando paso el mouse*/
     text-decoration: underline;
 }
 
+.utn {
+  display: flex;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e91e63;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+  transition: transform 0.9s;
+}
+
+.utn:hover {
+  transform: scale(1.1);
+}
+
+.utn a {
+  color: #333;
+  font-weight: bold;
+}
+
+ 
+
 /*-------------------------------ICONOS-----------------------------------------------------------------*/
 
 .aptitudes p{    
@@ -291,6 +312,10 @@ footer{
     ul {
         font-size: calc(0.4em + 0.2vw); /* Cambia el tamaño de fuente */
         margin-bottom: 1%; /* Cambia el espaciado */
+    }
+
+    div{ /*es el div de UTN*/
+      font-size: calc(0.8em + 0.1vw); 
     }
 
 /*-------------------ICONOS--------------------------------*/
